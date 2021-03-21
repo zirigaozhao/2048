@@ -143,8 +143,8 @@ void Game::add( int& num1, int& num2 ) {
 	}
 	int number = 0;
 	number = num1 + num2;
-	num2 = number;
-	num1 = 0;
+	num1 = number;
+	num2 = 0;
 }
 
 void Game::checkStage( ) {

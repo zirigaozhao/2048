@@ -23,7 +23,7 @@ void View::update( ) {
 void View::drawStage( ) {
 	for ( int i = 0; i < SIZE_OF_STAGE; i++ ) {
 		for ( int j = 0; j < SIZE_OF_STAGE; j++ ) {
-			cout << setw(4) << setfill(' ') << _stage->getNumOfStage( i, j );
+			cout << " " << setw( INTERVAL_FOR_NUM_TO_NUM ) << setfill(' ') << _stage->getNumOfStage( i, j );
 		}
 		cout << "\n";
 	}
