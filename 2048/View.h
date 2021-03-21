@@ -1,16 +1,19 @@
 #pragma once
 #include "BaseClass.h"
 #include "Stage.h"
+#include "Game.h"
 
-class ViewStage : public BaseClass {
+class View : public BaseClass {
 public:
-	ViewStage( Stage* stage );
-	virtual ~ViewStage( );
+	View( Stage* stage, Game* game );
+	virtual ~View( );
 public:
 	void update( ) override;
 private:
 	void drawStage( );
+	void drawGameOver( );
 private:
 	Stage* _stage;
+	Game* _game;
 };
 

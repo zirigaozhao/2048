@@ -14,7 +14,13 @@ private:
 	void init( );
 	void gameProcessing( );
 	void stageUpProcessing( );
+	void stageDownProcessing( );
+	void stageLeftProcessing( );
+	void stageRightProcessing( );
 	void add( int& num1, int& num2 );
+	void checkStage( );
+	bool corssCheck( );
+	bool verticalCheck( );
 private:
 	Stage* _stage;
 	Input* _input;

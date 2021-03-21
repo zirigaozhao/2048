@@ -18,10 +18,10 @@ bool Input::isHitEsc( ) {
 }
 
 void Input::update( ) {
+	initInputKey( );
 	if ( !isGetKeyIn( ) ) {
 		return;
 	}
-	initInputKey( );
 	inputProcessing( );
 }
 
